@@ -106,34 +106,24 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.gallery-item {
+.gallery-container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.gallery-container img {
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s ease;
   opacity: 0;
   transform: translateY(50px);
   animation: fadeInUp 1s forwards;
 }
 
-.gallery-item:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.gallery-item img {
-  width: 300px;
-  height: auto;
-  margin: 0 20px;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
+.gallery-container img:hover {
   transform: scale(1.1);
-}
-
-.gallery-description {
-  flex: 1;
-  font-size: 1em;
-  animation: slideIn 1s forwards;
 }
 
 @keyframes fadeInUp {
@@ -144,17 +134,6 @@ nav a:hover {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 

@@ -109,8 +109,9 @@ nav a:hover {
 .gallery-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   gap: 20px;
+  min-height: 350px;
 }
 
 .gallery-container img {

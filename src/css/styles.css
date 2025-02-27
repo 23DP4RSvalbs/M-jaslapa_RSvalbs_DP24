@@ -116,7 +116,8 @@ nav a:hover {
 
 .gallery-container img {
   width: 300px;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
   transition: transform 0.3s ease;
   opacity: 0;
   transform: translateY(50px);
